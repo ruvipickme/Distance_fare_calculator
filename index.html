@@ -1,0 +1,420 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      </script>
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Karma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- icons-font-awesome  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Go to top buton -Ajax call  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+     <!--Custome Css file--> 
+   
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Hello, PickMe!</title>
+  </head>
+
+  <body onload = "myFunction()" >
+    <a id="button"></a>
+    <div class="bs-example">
+      <nav class="navbar navbar-expand-md navbar-light bg-white   ">
+          <a href="#" class="navbar-brand">
+              <img src="images/Webp.net-resizeimage.png" width= "400" height="150" alt="pickme Engineering">
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+  <div class="navbar-nav"><a href="index.html" class="nav-item nav-link active" style="color:rgb(7, 1, 51);font-weight: bolder;font-size: 20px;margin-left: 70px;font-size: 25px;">Home</a>
+     <a href="http://support.pickme.lk/" target= "_blank" class="nav-item nav-link"style="color:rgb(7, 1, 51);font-weight: bolder;font-size: 20px;margin-left: 60px;font-size:25px;" >Contact Us <span style="color:rgb(42, 4, 4);width: 10px; height: 10px;"> (support.pickme.lk)</span></a>
+    </div>
+       <div class="navbar-nav ml-auto">
+
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+              <label form="inputPassword2" class="sr-only">Trip id</label>
+              <button value="logut" class="btn btn-danger mb-4" style="margin-top:0px;margin-right: 50px;font-weight:900;">Log out</button>
+              </div>
+             </form>
+         
+         </div>
+       </div>
+    </nav>
+  </div>
+
+<div class="jumbotron jumbotron-fluid" style = "background-image: url(images/final_cover.jpg);background-size:100% 100%; padding-top:100px; padding-bottom:200px;align-content: flex-end;">
+      <div class="container">
+       <!--  <h1 class="display-4" style="font-family: Georgia, 'Times New Roman', Times, serif;">Distance Fare calculator</h1> -->
+        <!--<p class="lead" style="font-family: 'Indie Flower', cursive;font-size: 30px;text-align: right;color: rgb(7, 5, 37);">Better explanation for all !<i class="fas fa-map-marked-alt"></i> </p>-->
+        <!--<marquee style="color: brown;">Develop by L2 Team by PickMe</marquee>-->
+      </div>
+ </div>
+      <div class="container">
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+                <label form="inputPassword2" class="sr-only" id="lbl">Trip id</label>
+                 <input type="text" class="form-control" id="Trip" placeholder="Trip id">
+                </div>
+               <button type="submit" class="btn btn-primary mb-2" id="getTrip" style="font-weight:900;">Get Trip Details</button>
+         </form>
+    </div>
+
+<div class="jumbotron jumbotron-fluid">
+   <div class="container">
+      <div class="form-row">
+         <div class="col-sm-4">
+                <label form="exampleInputPassword1">Start time</label>
+                 <input type="text" class="form-control" id="myText" placeholder="Enter Start time" >
+          </div>
+      <div class="col-sm-4">
+           <label for="exampleInputPassword1">End time</label>
+           <input type="text" class="form-control" id="myText1"  placeholder="Enter End time">
+      </div>
+
+       <div class="col-sm-4">
+             <label form="exampleInputPassword1">Duration</label>
+             <input type="text" class="form-control" id="myText2" placeholder="Enter Duration Time">
+       </div>
+                        </br></br></br></br>
+
+        <div class="col-sm-4">
+                <label form="exampleInputPassword1">Trip Status</label>
+                <input type="text" class="form-control" id="myText3" placeholder="Trip Status">
+        </div>
+
+         <div class="col-sm-4">
+                <label form="exampleInputPassword1">Vehicle Model</label>
+                <input type="text" class="form-control" id="myText4"  placeholder="Vehicle Model">
+         </div>
+
+         <div class="col-sm-4">
+                  <label form="exampleInputPassword1">Payment Method</label>
+                  <input type="text" class="form-control" id="myText5" placeholder="Payment Method">
+         </div>
+                      </br></br></br></br>
+
+          <div class="col-sm-4">
+                  <label form="exampleInputPassword1">Current fare</label>
+                  <input type="text" class="form-control" id="myText6">
+          </div>
+
+          <div class="col-sm-4">
+                  <label form="exampleInputPassword1">Discounted fare</label>
+                  <input type="text" class="form-control" id="myText7">
+          </div>
+
+          <div class="col-sm-4">
+                   <label form="exampleInputPassword1">promo code</label>
+                   <input type="text" class="form-control" id="myText8">
+          </div>
+                            </br></br></br></br>
+
+                            <div class="col-sm-4">
+                              <label form="exampleInputPassword1">Estimate Distance</label>
+                              <input type="text" class="form-control"id="myText9" placeholder="Estimate Distance">
+                        </div>
+    
+                        <div class="col-sm-4">
+                            <label form="exampleInputPassword1"> Actual Distance</label>
+                            <input type="text" class="form-control" placeholder=" Actual Distance"> </br>  <button onclick="myFunctionr()" class="btn btn-success mb-2" style="font-weight:900;">submit</button>                           
+                        </div>         
+                    </div>
+                    <div class="col-sm-4">
+                    <div class="answer_list" ></div>
+                    <input type="button"  name="answer" value="Get Fare Details" class="btn btn-info mb-2" onclick="onButtonClick()" style="font-weight:900;"  /></br></br>
+                    <input class="hide" name="textb" type="text" id="textInput" value="" style="width:400px; height: 50px;"/>   
+                </div>        
+            </div>     
+      </div>
+  
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <div class="col-sm-12" style="text-align: center;">
+                  <h3 class="fare">Fare break down</h3>
+                           <textarea rows="6" cols="100" name="comment" form="usrform"></textarea>
+              </div>
+                        </br></br>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+     <div class="form-row">
+        <div class="col-sm-4" style="margin-right: 60px;">
+               <label form="exampleInputPassword1">Agreed fare</label>
+                <input type="text" class="form-control" id="myText" placeholder="Enter Start time">
+        </br>
+        <input type="button" name="update" value="Update"
+               class="btn btn-success mb-8" style="font-weight:900;"/>
+         </div>
+         <div class="col-sm-4" style="margin-left: 200px;">
+           <label for="exampleInputPassword1">Calculated Id</label>
+           <input type="text" class="form-control" id="copyId"  placeholder=" copy this id" >
+          </br>
+           <button onclick="copyText()"  class="btn btn-success mb-8" style="font-weight:900;">Copy text</button>
+      </div>
+        </br>
+         
+            </div>
+        </div>    
+     </div>
+</div>
+<hr>
+<div class="container" style="width:100%;background-color: aqua;">  
+      <h2 align="center">View Summary</h2>  
+        <h3 align="center">Distance Fare Details</h3>                 
+            <br /><br />  
+          <div align="center">  
+        <input type="text" name="search" id="search" class="form-control" placeholder="search here..."/>  
+    </div>  
+                               <br /><br />  
+  <div class="table-responsive" >  
+       <table class="table table-bordered" id="employee_table">  
+            <tr>  
+                 <th width="35%">Trip id</th> 
+                 <th width="35%">Start Time</th>  
+                 <th width="35%">End Time</th>  
+                 <th width="35%">Distance</th> 
+                 <th width="35%">Estmated Fare</th>   
+                 <th width="35%">Distance Fare</th>                  
+                 <th width="35%">Agreed Fare</th>   
+                 <th width="35%">Promo code</th> 
+                 <th width="35%">Vehicle Model </th>   
+                
+            </tr>  
+    
+            <tr>                         
+                 <td>123123</td>  
+                 <td>2020-03-02 21:00:00</td>  
+                 <td>2020-03-02 21:32:15</td> 
+                 <td>60</td>  
+                 <td>2500</td>  
+                 <td>3000</td>  
+                 <td>4500</td>  
+                 <td>PickMe50</td> 
+                 <td>Tuk</td> 
+            </tr>  
+            <tr>  
+              <td>258258</td>  
+              <td>2020-03-02 21:00:00</td>  
+              <td>2020-03-02 21:32:15</td> 
+              <td>20</td>  
+              <td>2800</td>  
+              <td>8500</td>  
+              <td>4500</td>  
+              <td>PmIt</td> 
+              <td>Flex</td> 
+         </tr>                  
+
+         <tr>  
+          <td>789825</td>  
+          <td>2020-03-02 20:10:25</td>  
+          <td>2020-03-02 21:32:15</td> 
+          <td>80</td>  
+          <td>7800</td>  
+          <td>600</td>  
+          <td>4500</td>  
+          <td>PickMe20</td> 
+          <td>Mini Car</td> 
+     </tr>  
+
+     <tr>  
+      <td>789825</td>  
+      <td>2020-03-02 01:00:00</td>  
+      <td>2020-03-03 1:32:15</td> 
+      <td>80</td>  
+      <td>400</td>  
+      <td>80</td>  
+      <td>2000</td>  
+      <td>LPP40</td> 
+      <td>Car</td> 
+ </tr> 
+    </table>  
+  </div>  
+</div> 
+</br> 
+ <center><p style="color:black;font-family: 'Amiri', serif;font-size: 25px; font-style: inherit;" >If you having issue on meter,don't hesitate to click Contact Us !</p>
+
+ </center>
+
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+     
+    </div>
+   
+  </div>
+
+<script>
+
+
+//show Fare_details separate
+
+function ShowHideDiv(cal) {
+        var cal2 = document.getElementById("Fare_details");
+        cal2.style.display = cal.value == "Calculate" ? "block" : "none";
+    }
+
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 800) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+//text copy
+function copyText() { 
+              var copyGfGText = document.getElementById("copyId"); 
+              copyGfGText.select(); 
+              document.execCommand("copy"); 
+              alert("Copied the text: " + copyGfGText.value); 
+            }  
+//table search
+function myFunctionT() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
+//form disable
+
+function myFunction() {
+          document.getElementById("Trip").disabled = true;
+          document.getElementById("getTrip").disabled = true;  
+          document.getElementById("myText").disabled = true;
+           document.getElementById("myText1").disabled = true;
+           document.getElementById("myText2").disabled = true;
+           document.getElementById("myText3").disabled = true;
+           document.getElementById("myText4").disabled = true;
+           document.getElementById("myText5").disabled = true;
+           document.getElementById("myText6").disabled = true;
+           document.getElementById("myText7").disabled = true;
+           document.getElementById("myText8").disabled = true;
+           document.getElementById("myText9").disabled = true;
+           document.getElementById("btnok").disabled = true;
+          // document.getElementById("textInput").disabled = true;
+           
+
+//enable forms
+         
+        }
+        function myFunctionr() {
+          document.getElementById("Trip").disabled = false;
+          document.getElementById("getTrip").disabled = false;  
+          document.getElementById("myText").disabled = false;
+          document.getElementById("myText1").disabled = false;
+          document.getElementById("myText2").disabled = false;
+          document.getElementById("myText3").disabled = false;
+          document.getElementById("myText4").disabled = false;
+           document.getElementById("myText5").disabled = false;
+           document.getElementById("myText6").disabled = false;
+           document.getElementById("myText7").disabled = false;
+           document.getElementById("myText8").disabled = false;
+           document.getElementById("myText9").disabled = false;
+           document.getElementById("btnok").disabled = false;
+          // document.getElementById("textInput").disabled = false;
+          
+        }
+
+
+        
+    
+//get fare details
+
+function onButtonClick(){
+  document.getElementById('textInput').className="show";
+}
+
+              //table
+              $(document).ready(function(){  
+          $('#search').keyup(function(){  
+               search_table($(this).val());  
+          });  
+          function search_table(value){  
+               $('#employee_table tr').each(function(){  
+                    var found = 'false';  
+                    $(this).each(function(){  
+                         if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                         {  
+                              found = 'true';  
+                         }  
+                    });  
+                    if(found == 'true')  
+                    {  
+                         $(this).show();  
+                    }  
+                    else  
+                    {  
+                         $(this).hide();  
+                    }  
+               });  
+          }  
+     });  
+    
+          
+
+</script>
+
+  
+  </div>
+
+<footer class="page-footer font-small blue" style="background-color:navy;">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: oldlace; font-size: 20px;font-family: 'Amiri', serif;
+  ">© 2020 Copyright:
+    <a href="https://support.pickme.lk/" style="color:oldlace;"> L2 Support Team -PickMe Engineering</a>
+  </div>
+
+
+</footer>
+<!-- Footer -->
+
+  </body>
+</html>
