@@ -111,14 +111,14 @@ tr:nth-child(even) {
   width: 100%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   margin-bottom: 12px;
 }
 
 #myTable {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   font-size: 18px;
 }
 
@@ -128,14 +128,14 @@ tr:nth-child(even) {
 }
 
 #myTable tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom:1px solid black;
 }
 
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
 th {
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid black;
 }
 
 tr:nth-child(even) {
